@@ -42,7 +42,7 @@ if ( $email_exists && password_verify($data->password, $user->password) ) {
        "iss" => $iss,
        "aud" => $aud,
        "iat" => $iat,
-       "nbf" => $nbf,
+       "exp" => $exp,
        "data" => array(
            "id" => $user->id,
            "firstname" => $user->firstname,
